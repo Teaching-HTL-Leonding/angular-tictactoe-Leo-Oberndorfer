@@ -1,0 +1,7 @@
+<button id="reset" (click)="reset()">Reset</button>
+<div id="board">
+  @for (square of squares; track $index) {
+    <app-square class="cell" [value]="square" (click)="handleClick($index)"></app-square>
+  }
+</div>
+<p id="status">{{st}}</p>
